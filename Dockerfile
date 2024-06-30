@@ -1,5 +1,8 @@
+
 # Use an official Maven image to build the application
-FROM maven:3.8.6-openjdk-17 AS build
+FROM ubuntu:latest AS build
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk -y
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
