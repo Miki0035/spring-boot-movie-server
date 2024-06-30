@@ -1,7 +1,8 @@
 # Use an official Maven image to build the application
 FROM maven:3.8.6-openjdk-17 AS build
 WORKDIR /app
-COPY . .
+COPY pom.xml .
+COPY src ./src
 RUN mvn clean install -DskipTests
 
 # Use an official OpenJDK image to run the application
