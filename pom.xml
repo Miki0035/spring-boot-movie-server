@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.mikemovieapi</groupId>
 	<artifactId>movies</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>movies</name>
 	<description>A simple API related to movies</description>
 	<url/>
